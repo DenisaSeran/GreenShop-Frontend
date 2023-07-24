@@ -1,0 +1,28 @@
+<input [(ngModel)]="searchValue" class ="searchProductInput" type="text" placeholder="Search product" size="50">
+<div class="products">
+    <div *ngFor="let product of productsList |filter:searchValue" >
+        <div class="content">
+            <img [src]="product.prodImgUrl">
+            <h3>{{product.productName}}</h3>
+    
+            <div class="expInfo">
+               <p>Expires at: {{product.expDate| date}}</p>
+            </div>
+            
+            <div class="saleInfo">
+                <p class="saleSign">Sale date:</p> 
+                <p class="saleDate">{{product.saleDate| date}}</p>
+            </div>
+    
+            <div class="prices">
+                <s>{{product.regularPrice | number:'1.2-3'}} RON</s>
+                <p class="reduced-price">{{product.reducedPrice | number:'1.2-3'}} RON</p>
+            </div>
+           <button>Reserve product</button>
+        
+        </div>
+    </div>
+    
+
+</div>
+

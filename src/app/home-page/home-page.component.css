@@ -1,0 +1,361 @@
+.homeContainer{
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: rgba(242, 247, 246, 0.5);
+}
+#first{
+    overflow-x: hidden;
+}
+h5{
+    color:rgb(11, 109, 96);
+    position: relative;
+    left: 44%;
+    top: -17%;
+    font-size: 15px;
+}
+#cartImg{
+  cursor: pointer;
+  position: relative;
+  left: 35%;
+  top: -145px;
+  transform: scale(0.8);
+}
+
+#curve{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+#curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 300px;  
+}
+#curve .shape-fill{
+    fill:rgb(14, 126, 111);
+    
+}
+#curve2{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+#curve2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;  
+}
+#curve2 .shape-fill{
+    fill:rgb(11, 109, 96);
+    
+}
+.homeTitle{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Style Script', cursive;
+    font-size: 100px;
+    position: relative;
+    left: 40%;
+    top: -4%;
+    color: rgb(16, 90, 74);
+    margin-top:40px;
+    margin-bottom: 30px;
+}
+
+
+.main{
+    position: relative;
+    top: -120px;
+    left: 40%;
+	width: 350px;
+	height: 500px;
+	background: rgb(11, 109, 96);
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 5px 20px 30px #4e5656;
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+label{
+    position: relative;
+    top: -40px;
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+input{
+    position: relative;
+    top: -60px;
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+.SignUpInput{
+    position: relative;
+    top: -80px;
+}
+#loginForm{
+    position: relative;
+    top: 75px;
+}
+#SignUpForm{
+    position: relative;
+    top: -10px;
+}
+button{
+    position: relative;
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: rgb(7, 82, 72);
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+#SignUpBtn{
+    position: relative;
+    top: -76px;
+}
+button:hover{
+    background: rgb(6, 67, 59);
+    transform: scale(1.05);
+}
+.login{
+	height: 460px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login label{
+    position: relative;
+    top: 5px;
+	color: #268674;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-550px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+#signInBtn{
+    color: #268674;
+}
+form{
+    position: relative;
+    top: 1%;
+}
+#storeImg{
+    cursor: pointer;
+    position: relative;
+    left: 96%;
+    top: -5px;
+    transform: scale(0.7);
+}
+#storeImg:hover{
+    transform: scale(0.85);
+}
+
+.backwrap {
+    /* Old browsers */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  /* Shapes & Animation
+  */
+  .back-shapes {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .back-shapes img {
+    opacity: 0.75;
+    position: absolute;
+    width: 1.5%;
+  }
+  
+  .floating {
+    position: absolute;
+    animation-name: floating;
+    -webkit-animation-name: floating;
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+  .floating.apple {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    background-image: url("/assets/images/apples.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+  }
+  .floating.banana {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("/assets/images/banana.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+  }
+  .floating.brocoli {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("/assets/images/brocoli.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+  }
+  .floating.candy {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("/assets/images/candy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+  }
+  .floating.watermelon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("/assets/images/watermelon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+  }
+  .floating.soda {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("/assets/images/soda.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+  }
+  .floating.bread {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("/assets/images/bread.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+  }
+  .floating.milk {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("/assets/images/milk.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+  }
+  .floating.cheese {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("/assets/images/cheese.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+  }
+  .floating.groceries {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("/assets/images/grocery.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+  }
+  
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0%) rotate(-55deg);
+    }
+    50% {
+      transform: translateY(300%) rotate(55deg);
+    }
+    100% {
+      transform: translateY(0%) rotate(-55deg);
+    }
+  }
+  @-webkit-keyframes floating {
+    0% {
+      -webkit-transform: translateY(0%);
+    }
+    50% {
+      -webkit-transform: translateY(300%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+    }
+  }

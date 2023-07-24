@@ -1,0 +1,181 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    font-family: 'Raleway', sans-serif;
+}
+.content{
+    width: 300px;
+    height: 430px;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.25), 0 6px 5px rgba(0,0,0,0.23);
+    transition: .4s;
+    background: #cbd7d1;
+    
+}
+.content:hover{
+    transform: translate(0px, -2px);
+    box-shadow: 0 6px 6px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+h3{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(76, 87, 84);
+    margin: 0;
+    padding-top: 10px;
+} 
+s{
+    font-size: 20px;
+    font-weight: 600;
+}
+img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin:  0 auto;
+    display: block;
+}
+
+@media(max-width:1000px){
+    .content{
+        width: 45px;
+    }
+}
+@media(max-width:750){
+    .content{
+        width: 100%;
+    }
+}
+.expInfo{
+    position: relative;
+    top: -10px;
+    color: rgb(108, 108, 108);
+    display: grid;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-shadow: 2px 2px 0 rgb(251, 251, 251);
+}
+.saleInfo {
+    display: flex;
+    
+}
+.saleSign{
+    position: relative;
+    top: -25px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100px;
+    height: 19px;
+    background-color: rgb(243, 128, 128);
+    border-radius: 999px;
+    color: #ffffff;
+    margin-right: 3%;
+    margin-left: 14%;
+}
+.saleDate{
+    position: relative;
+    top: -24px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(108, 108, 108);
+   
+}
+.reduced-price{
+    display: inline-block;
+    width: auto;
+    height: 38px;
+    background-color: rgb(17, 159, 140);
+    -webkit-border-radius: 3px 4px 4px 3px;
+    -moz-border-radius: 3px 4px 4px 3px;
+    border-radius: 3px 4px 4px 3px;
+    border-left: 1px solid rgb(17, 159, 140);
+    margin-left: 19px;
+    position: relative;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 38px;
+    padding: 0 10px 0 10px;
+}
+.reduced-price:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -19px;
+    width: 0;
+    height: 0;
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-right: 19px solid rgb(10, 120, 105);
+  }
+  
+  .reduced-price:after {
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: -9px;
+    top: 17px;
+  }
+
+.prices{
+    display: block;
+    position: relative;
+    top: -50px;
+}
+
+button{
+    position: relative;
+    top: -78px;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #ffffff;
+	background: rgb(126, 141, 137);
+	font-size: 13px;
+	font-weight: 600;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+button:hover{
+    background-color: #ffffff;
+    color: rgb(126, 141, 137);
+}
+.searchProductInput{
+    color: rgb(100, 100, 100);
+    display: inline-block;
+    position: relative;
+    bottom: 0%;
+    left: 1%;
+    width: 25%;
+    height: 21px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 1px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
